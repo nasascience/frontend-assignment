@@ -1,0 +1,49 @@
+.card {
+  background: #323232;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 25px;
+  cursor: pointer;
+  position: relative;
+  width: 210px;
+}
+
+.bookmark {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.summary {
+  font-size: 0.8em;
+  font-weight: 200;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5em;
+  margin: 5px;
+}
+
+.card img {
+  transition: filter 0.3s ease;
+}
+
+.card :hover img {
+  filter: brightness(0.7);
+}

@@ -1,0 +1,30 @@
+.title {
+  color: white;
+}
+
+.listComtainer {
+  text-align: left;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.moviesWrapContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.messageAlign {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  height: 200px;
+  line-height: 200px;
+}
