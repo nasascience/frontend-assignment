@@ -5,14 +5,17 @@ import { Popup } from "../popup/popup";
 export function MovieCard(props: IMovieProp) {
   const [showDetails, setShowDetails] = useState<boolean>(false);
 
+  // Add movie to favorites in localstorage
   const addFavorite = (movie: IMovie) => {
     if (props.onAddFavourite) props.onAddFavourite(movie);
   };
 
+  // Remove movie from favorites in localstorage
   const deleteFavorite = (movie: IMovie) => {
     if (props.onRemoveFavourite) props.onRemoveFavourite(movie.id);
   };
 
+  // handle close popup
   const onClosePopup = () => {
     setShowDetails(false);
   };

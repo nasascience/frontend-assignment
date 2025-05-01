@@ -4,10 +4,12 @@ import { MovieCard } from "../movie-card/movie-card";
 import styles from "./movie-list.module.css";
 
 export function MovieList(props: IMovieList) {
+  // set default message depending on the props
   const message = props.favourites
     ? "No Favourites Selected"
     : "No Movies to display";
 
+  // check if the movies array is empty and if so, return a message
   if (props.movies?.length === 0)
     return (
       <>
