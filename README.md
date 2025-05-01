@@ -1,5 +1,20 @@
 # Movie Explorer App
 
+## Mejoras Adicionales
+
+Testing:
+
+- Agregaría pruebas unitarias para asegurar la estabilidad del comportamiento principal (renderizado de películas, favoritos, detalles, etc).
+- Implementaría pruebas e2e usando Cypress o Playwright para simular la interacción real del usuario verificando cuando hace click en una película para ver los detalles o incluso al añadir y eliminar favoritos.
+
+State Management - Gestión de estados
+
+- Con mas tiempo habría integrado un metodo de gestión de usuarios global como lo indica el enunciado. En este mini proyecto gestioné los estados principalmente con hooks locales como el useState y algunos custom hooks como el useFavourites y el useMovies para encapsular la lógica del proyecto manteniendo el codigo reutilizable y organizado.
+
+Mejoras UI/UX
+
+- Agregaría animaciones y mejor estilo para que se vea mas agradable al usurio, también mejoraría la forma como se muestran los favoritos
+
 ## Objetivo
 
 Construir una pequeña aplicación web en React que consuma una API y permita explorar una lista de películas. Queremos que trates este mini proyecto como si lo fueses a poner en producción.
@@ -30,18 +45,3 @@ Incluye un README explicando brevemente qué harías diferente con más tiempo.
 ## Entrega
 
 Sube tu código a un repo de GitHub. Si es privado trendrás que darnos acceso (usuarios ograu y lonamiaec de github)
-
-## MEJORAS ADICIONALES
-
-Testing:
-
-- Agregaría pruebas unitarias para asegurar la estabilidad del comportamiento principal (renderizado de películas, favoritos, detalles, etc).
-- Implementaría pruebas e2e usando Cypress o Playwright para simular la interacción real del usuario verificando cuando hace click en una película para ver los detalles o incluso al añadir y eliminar favoritos.
-
-State Management - Gestión de estados
-
-- Con mas tiempo habría integrado un metodo de gestión de usuarios global como lo indica el enunciado. En este mini proyecto gestioné los estados principalmente con hooks locales como el useState y algunos custom hooks como el useFavourites y el useMovies para encapsular la lógica del proyecto manteniendo el codigo reutilizable y organizado.
-
-Mejoras UI/UX
-
-- Agregaría animaciones y mejor estilo para que se vea mas agradable al usurio, también mejoraría la forma como se muestran los favoritos
